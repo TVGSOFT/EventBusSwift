@@ -408,6 +408,7 @@
 				FB6EBF6B1E2003FB005EB137 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB6EBF6C1E2003FB005EB137 /* Build configuration list for PBXNativeTarget "EventBusSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +417,7 @@
 				FB6EBF6E1E2003FB005EB137 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
