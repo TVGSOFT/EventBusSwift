@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
  
   s.platform = :ios
   s.ios.deployment_target = '8.0'
-  s.name = “EventBusSwift”
+  s.name = "EventBusSwift"
   s.summary = "Simplifies the communication between components"
   s.requires_arc = true
   s.version = "0.1.0"
