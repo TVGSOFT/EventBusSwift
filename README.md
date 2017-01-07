@@ -8,6 +8,24 @@ The idea come from https://github.com/greenrobot/EventBus in Android.
 - Swift 3
   - Xcode 8.0+
 
+## Installation
+
+### CocoaPods
+
+To install EventBusSwift with CocoaPods, add the following lines to your `Podfile`.
+
+#### Swift 3.0.x
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0' # or platform :osx, '10.10' if your target is OS X.
+use_frameworks!
+
+pod 'EventBusSwift'
+```
+
+Then run `pod install` command. For details of the installation and usage of CocoaPods, visit [its official website](https://cocoapods.org).
+
 ## Documentation
 
 1. Define Notification Name:
