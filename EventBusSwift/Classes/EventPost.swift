@@ -23,7 +23,7 @@ class EventPost {
     // MARK: Internal method
 
     internal func add(observer: Any, handler: @escaping EventBusHandler) {
-        let key = String(describing: observer)
+        let key = String(describing: type(of: observer))
         if let _ = observers[key], let _ = handlers[key] {
             fatalError("\(key) has registered event. Please unregister before use it again!")
         }
@@ -32,13 +32,13 @@ class EventPost {
     }
     
     internal func remove(observer: Any) {
-        let key = String(describing: observer)
+        let key = String(describing: type(of: observer))
         observers[key] = nil
         handlers[key] = nil
     }
     
     internal func contains(observer: Any) -> Bool {
-        let key = String(describing: observer)
+        let key = String(describing: type(of: observer))
         return observers[key] != nil
     }
     

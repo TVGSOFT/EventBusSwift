@@ -1,0 +1,16 @@
+PODS:
+  - EventBusSwift (0.1.1)
+
+DEPENDENCIES:
+  - EventBusSwift (from `../`)
+
+EXTERNAL SOURCES:
+  EventBusSwift:
+    :path: ../
+
+SPEC CHECKSUMS:
+  EventBusSwift: 2d324d1cb8c538a548fff9d2c23fa062755d3e5b
+
+PODFILE CHECKSUM: 3f8b403d1401d6479df3c3345370458fdccb47cb
+
+COCOAPODS: 1.2.0.beta.3

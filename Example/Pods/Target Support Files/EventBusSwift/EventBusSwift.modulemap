@@ -1,0 +1,6 @@
+framework module EventBusSwift {
+  umbrella header "EventBusSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

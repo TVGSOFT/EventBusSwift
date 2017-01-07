@@ -1,15 +1,15 @@
 //
-//  EventBusSwiftTests.swift
-//  EventBusSwiftTests
+//  ExampleTests.swift
+//  ExampleTests
 //
-//  Created by Giáp Trần on 1/6/17.
+//  Created by Giáp Trần on 1/7/17.
 //  Copyright © 2017 Giáp Trần. All rights reserved.
 //
 
 import XCTest
-@testable import EventBusSwift
+@testable import Example
 
-class EventBusSwiftTests: XCTestCase {
+class ExampleTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
