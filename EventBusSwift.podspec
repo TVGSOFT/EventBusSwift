@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.requires_arc          = true
   s.version               = "0.1.1"
   s.license               = { :type => "MIT", :file => "LICENSE" }
-  s.author                = { "Giap Tran" => "tvg@gmail.com" }
+  s.author                = { "TVG" => "tvg@gmail.com" }
   s.homepage              = "https://github.com/TVGSoft/EventBusSwift"
   s.source                = { :git => "https://github.com/TVGSoft/EventBusSwift.git", :tag => "#{s.version}"} 
   s.source_files          = "EventBusSwift/Classes/*.{swift}"
