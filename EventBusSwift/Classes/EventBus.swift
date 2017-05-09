@@ -63,7 +63,7 @@ public class EventBus {
         startSchedulePost()
     }
     
-    public func register(_ observer: Any, name: Notification.Name, handler: @escaping EventBusHandler) {
+    public func register(_ observer: AnyObject, name: Notification.Name, handler: @escaping EventBusHandler) {
         var eventPost = subscribers[name.rawValue]
         if eventPost == nil {
             eventPost = EventPost()
@@ -80,7 +80,7 @@ public class EventBus {
         eventPost?.add(observer: observer, handler: handler)
     }
     
-    public func unregister(_ observer: Any, name: Notification.Name) {
+    public func unregister(_ observer: AnyObject, name: Notification.Name) {
         if let eventPost = subscribers[name.rawValue] {
             eventPost.remove(observer: observer)
             if eventPost.isEmpty {
