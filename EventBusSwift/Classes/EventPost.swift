@@ -13,7 +13,7 @@ class EventPost {
     internal var object: Any?
     internal var isActive: Bool = false
     
-    private var observers = [UInt: AnyObject]()
+    private var observers = [UInt: WeakObject]()
     private var handlers = [UInt: EventBusHandler]()
     
     internal var isEmpty: Bool {
@@ -24,8 +24,10 @@ class EventPost {
 
     internal func add(observer: AnyObject, handler: @escaping EventBusHandler) {
         let key = UInt(bitPattern: ObjectIdentifier(observer))
-        observers[key] = observer
+        observers[key] = WeakObject(value: observer)
         handlers[key] = handler
+    
+        clean()
     }
     
     internal func remove(observer: AnyObject) {
@@ -43,6 +45,14 @@ class EventPost {
     internal func send() {
         for (_, handler) in handlers {
             handler(object)
+        }
+    }
+    
+    private func clean() {
+        let observers = self.observers.filter({ $0.value.value == nil })
+        observers.forEach { (key, value) in
+            self.observers[key] = nil
+            self.handlers[key] = nil
         }
     }
     
