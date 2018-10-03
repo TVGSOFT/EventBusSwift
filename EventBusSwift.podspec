@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.name                  = "EventBusSwift"
   s.summary               = "Simplifies the communication between components"
   s.requires_arc          = true
-  s.version               = "0.2.0"
+  s.version               = "0.2.1"
   s.license               = { :type => "MIT", :file => "LICENSE" }
   s.author                = { "TVG" => "tvg@gmail.com" }
   s.homepage              = "https://github.com/TVGSoft/EventBusSwift"

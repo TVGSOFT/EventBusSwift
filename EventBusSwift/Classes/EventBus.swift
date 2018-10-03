@@ -27,16 +27,6 @@ public class EventBus {
     // MARK: Constructor
     
     private init() {
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(memmoryWarningNotification(_:)),
-            name    : .UIApplicationDidReceiveMemoryWarning,
-            object  : nil
-        )
-    }
-    
-    deinit {
-        NotificationCenter.default.removeObserver(self)
     }
     
     // MARK: Public method
